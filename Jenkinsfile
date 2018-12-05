@@ -2,7 +2,7 @@ node {
 	
 	
 	stage('Checkout') {
-	              git 'https://github.com/rajat1403/JunitMaven.git'
+	              git 'https://github.com/Kgasr/JunitMaven.git'
 	       }
 	
 	stage('SonarQube Analysis') {
