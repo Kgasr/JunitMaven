@@ -7,9 +7,9 @@ node {
 	
 	stage('SonarQube Analysis') {
 	
-	                def scannerHome = tool 'SonarQube Scanner 2.8';
+	                def scannerHome = tool name: 'maven-3', type: 'aveb'
     			withSonarQubeEnv('My SonarQube Server') {
-      			sh "${scannerHome}/bin/sonar-scanner"	      
+      			sh "${scannerHome}/bin/mvn sonar:sonar"	      
 			      
 	              }
 	       }
